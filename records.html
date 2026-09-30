@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Records | Diabetic Care Club | EUREKA</title>
+  <meta name="description" content="Patient records and continuous monitoring for Diabetic Care Club members.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <svg class="header-swoosh" viewBox="0 0 560 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M40 0 C170 58 380 86 560 64 L560 0 Z" fill="#f1fbfa" />
+      <path d="M210 0 C300 38 440 52 560 40 L560 0 Z" fill="#dff5f3" />
+      <path d="M370 0 C430 22 500 28 560 20 L560 0 Z" fill="#b4ebe7" />
+      <path d="M470 0 C500 9 530 11 560 7 L560 0 Z" fill="#25b8b1" />
+    </svg>
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="EUREKA — home">
+        <svg class="brand-mark" viewBox="0 0 48 40" aria-hidden="true">
+          <path d="M4 14 C14 6 30 4 44 6" stroke="#25b8b1" />
+          <path d="M4 24 C16 14 32 12 44 14" stroke="#159c96" />
+          <path d="M4 34 C18 24 34 22 44 24" stroke="#0b5351" />
+        </svg>
+        <span class="brand-text">
+          <strong>EUREKA</strong>
+          <em>redefine your ideas</em>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="records.html" class="active" aria-current="page">Patient Records</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm btn-login" id="loginBtn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="login-text">Patient Login</span>
+        </a>
+        <a href="tel:+919088350914" class="btn btn-primary btn-sm btn-call">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span class="btn-call-text">90883 50914</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-stripe" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <svg class="banner-swoosh" viewBox="0 0 560 260" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M120 0 C260 90 420 110 560 70 L560 0 Z" fill="#ffffff" opacity=".06" />
+      <path d="M280 0 C380 56 480 64 560 32 L560 0 Z" fill="#6fd9d3" opacity=".25" />
+      <path d="M420 0 C470 26 520 28 560 12 L560 0 Z" fill="#6fd9d3" opacity=".5" />
+    </svg>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Patient Records</li>
+        </ol>
+        <h1>Patient Records &amp; Monitoring</h1>
+        <p>Register patients, log every reading and keep watch on who needs attention. Records are saved in this browser.</p>
+      </div>
+      <svg class="banner-waves" viewBox="0 0 1440 20" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="bsA" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#6fd9d3" /><stop offset="1" stop-color="#b4ebe7" /></linearGradient>
+        <linearGradient id="bsT" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#25b8b1" /><stop offset="1" stop-color="#6fd9d3" /></linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1440" height="5" fill="url(#bsA)" opacity=".7" />
+      <rect x="0" y="8" width="1440" height="12" fill="url(#bsT)" />
+    </svg>
+    </section>
+
+    <section class="records-section">
+      <div class="container">
+        <!-- Overview -->
+        <div class="overview">
+          <div class="ov-tile">
+            <span class="ov-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+            <div><span class="ov-value" id="ovPatients">0</span><span class="ov-label">Registered patients</span></div>
+          </div>
+          <div class="ov-tile alert">
+            <span class="ov-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span>
+            <div><span class="ov-value" id="ovAttention">0</span><span class="ov-label">Need attention</span></div>
+          </div>
+          <div class="ov-tile">
+            <span class="ov-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <div><span class="ov-value" id="ovRecent">0</span><span class="ov-label">Readings in last 30 days</span></div>
+          </div>
+          <div class="ov-tile">
+            <span class="ov-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></span>
+            <div><span class="ov-value" id="ovTotal">0</span><span class="ov-label">Total readings</span></div>
+          </div>
+        </div>
+
+        <div class="records-layout">
+          <!-- Patient list -->
+          <aside class="card patients-panel" aria-label="Patients">
+            <div class="panel-head">
+              <h2>Patients</h2>
+              <button type="button" class="btn btn-primary btn-sm" id="openRegister"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> New</button>
+            </div>
+            <label class="sr-only" for="patientSearch">Search patients</label>
+            <input type="search" id="patientSearch" placeholder="Search name, ID or phone" autocomplete="off">
+            <div class="filter-tabs" role="group" aria-label="Filter patients">
+              <button type="button" data-filter="all" aria-pressed="true">All <span class="count" id="countAll">0</span></button>
+              <button type="button" data-filter="attention" aria-pressed="false">Attention <span class="count alert" id="countAttention">0</span></button>
+            </div>
+            <ul class="patient-list" id="patientList"></ul>
+          </aside>
+
+          <!-- Patient detail -->
+          <div class="patient-detail">
+            <div class="card empty-state" id="emptyState">
+              <div class="icon-ring"><span class="icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="6" width="32" height="38" rx="4"/><path d="M17 6v-2h14v2"/><polyline points="14,26 19,26 22,20 26,32 29,26 34,26"/></svg></span></div>
+              <h3>No patient selected</h3>
+              <p>Register a new patient or pick one from the list to see their record and monitoring.</p>
+              <button type="button" class="btn btn-primary" id="emptyRegister"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg> Register patient</button>
+            </div>
+
+            <div id="detailView" hidden>
+              <div class="patient-detail">
+                <div class="card detail-head">
+                  <span class="avatar lg" id="dAvatar"></span>
+                  <div class="d-info">
+                    <h2 id="dName"></h2>
+                    <p class="d-meta" id="dMeta"></p>
+                  </div>
+                  <div class="detail-actions">
+                    <button type="button" class="btn btn-primary btn-sm" id="openReading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Add reading</button>
+                    <button type="button" class="btn btn-danger-ghost btn-sm" id="deletePatient">Remove</button>
+                  </div>
+                  <ul class="alert-strip" id="dAlerts"></ul>
+                </div>
+
+                <div class="stats" id="stats"></div>
+
+                <div class="card">
+                  <div class="chart-head">
+                    <h3>Blood sugar trend</h3>
+                    <div class="legend">
+                      <span><i class="lg-fasting"></i>Fasting</span>
+                      <span><i class="lg-pp"></i>Post-meal</span>
+                      <span><i class="lg-band"></i>Target range 70–180</span>
+                    </div>
+                  </div>
+                  <div class="chart-wrap">
+                    <canvas id="trendChart" role="img" aria-label="Line chart of fasting and post-meal blood sugar over time"></canvas>
+                    <p class="chart-empty" id="chartEmpty">No sugar readings to show yet.</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <h3>Reading history</h3>
+                  <div class="table-scroll">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Fasting</th>
+                          <th>Post-meal</th>
+                          <th>HbA1c</th>
+                          <th>BP</th>
+                          <th>Weight</th>
+                          <th>Notes</th>
+                          <th><span class="sr-only">Actions</span></th>
+                        </tr>
+                      </thead>
+                      <tbody id="historyBody"></tbody>
+                    </table>
+                  </div>
+                  <p class="targets-note">
+                    Status uses general targets for people with diabetes (fasting 70–130 mg/dL, post-meal below 180 mg/dL,
+                    HbA1c below 7%, BP below 130/80). The treating doctor may set different personal targets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register patient dialog -->
+    <dialog id="registerDialog" aria-labelledby="registerTitle">
+      <form id="patientForm">
+        <div class="dialog-head">
+          <div>
+            <h2 id="registerTitle">Register patient</h2>
+            <p>A Patient ID is created automatically. The patient logs in with this ID and their mobile number.</p>
+          </div>
+          <button type="button" class="dialog-close" data-close aria-label="Close">&times;</button>
+        </div>
+        <div class="dialog-body">
+          <div class="field"><label for="pName">Full name <span class="req">*</span></label><input id="pName" name="fullName" type="text" required autocomplete="off"></div>
+          <div class="field-row">
+            <div class="field"><label for="pAge">Age <span class="req">*</span></label><input id="pAge" name="age" type="number" min="1" max="120" required></div>
+            <div class="field"><label for="pGender">Gender <span class="req">*</span></label><select id="pGender" name="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="pPhone">Mobile number <span class="req">*</span></label><input id="pPhone" name="phone" type="tel" inputmode="numeric" required minlength="10" maxlength="16" placeholder="10-digit mobile" autocomplete="off"></div>
+            <div class="field"><label for="pType">Diabetes type <span class="req">*</span></label><select id="pType" name="type" required><option value="">Select</option><option>Type 1</option><option>Type 2</option><option>Gestational</option><option>Prediabetes</option></select></div>
+          </div>
+          <div class="field"><label for="pSince">Diagnosed in (year)</label><input id="pSince" name="since" type="number" min="1950"></div>
+        </div>
+        <div class="dialog-foot">
+          <p class="form-msg" id="patientMsg" role="status"></p>
+          <button type="button" class="btn btn-outline" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Add reading dialog -->
+    <dialog id="readingDialog" aria-labelledby="readingTitle">
+      <form id="readingForm">
+        <div class="dialog-head">
+          <div>
+            <h2 id="readingTitle">Add reading</h2>
+            <p id="readingFor"></p>
+          </div>
+          <button type="button" class="dialog-close" data-close aria-label="Close">&times;</button>
+        </div>
+        <div class="dialog-body">
+          <div class="field"><label for="rDate">Date <span class="req">*</span></label><input id="rDate" name="date" type="date" required></div>
+          <div class="field-row">
+            <div class="field"><label for="rFasting">Fasting sugar <small>mg/dL</small></label><input id="rFasting" name="fasting" type="number" min="20" max="700"></div>
+            <div class="field"><label for="rPP">Post-meal sugar <small>mg/dL</small></label><input id="rPP" name="pp" type="number" min="20" max="700"></div>
+          </div>
+          <div class="field-row three">
+            <div class="field"><label for="rSys">BP systolic <small>mmHg</small></label><input id="rSys" name="sys" type="number" min="60" max="260"></div>
+            <div class="field"><label for="rDia">BP diastolic <small>mmHg</small></label><input id="rDia" name="dia" type="number" min="30" max="160"></div>
+            <div class="field"><label for="rHba1c">HbA1c <small>%</small></label><input id="rHba1c" name="hba1c" type="number" min="3" max="20" step="0.1"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="rWeight">Weight <small>kg</small></label><input id="rWeight" name="weight" type="number" min="2" max="300" step="0.1"></div>
+            <div></div>
+          </div>
+          <div class="field"><label for="rNotes">Notes</label><textarea id="rNotes" name="notes" rows="2" placeholder="Medication, symptoms, diet…"></textarea></div>
+        </div>
+        <div class="dialog-foot">
+          <p class="form-msg" id="readingMsg" role="status"></p>
+          <button type="button" class="btn btn-outline" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Save reading</button>
+        </div>
+      </form>
+    </dialog>
+
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <svg class="footer-wave" viewBox="0 0 1440 16" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="ftA" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#6fd9d3" /><stop offset="1" stop-color="#b4ebe7" /></linearGradient>
+        <linearGradient id="ftT" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#25b8b1" /><stop offset="1" stop-color="#6fd9d3" /></linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1440" height="5" fill="url(#ftA)" />
+      <rect x="0" y="8" width="1440" height="8" fill="url(#ftT)" />
+    </svg>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-light" aria-label="EUREKA — home">
+          <svg class="brand-mark" viewBox="0 0 48 40" aria-hidden="true">
+          <path d="M4 14 C14 6 30 4 44 6" stroke="#6fd9d3" />
+          <path d="M4 24 C16 14 32 12 44 14" stroke="#25b8b1" />
+          <path d="M4 34 C18 24 34 22 44 24" stroke="#ffffff" />
+        </svg>
+          <span class="brand-text">
+            <strong>EUREKA</strong>
+            <em>redefine your ideas</em>
+          </span>
+        </a>
+        <p class="footer-about">Diabetic Care Club — get full Diabetes care throughout the year, with a complete record and continuous monitoring for every patient.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="records.html">Patient Records</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Patient Login</a></li>
+          <li><a href="register.html">Patient Registration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#facilities">All medical facilities</a></li>
+          <li><a href="services.html#monitoring">Digital Central Monitoring</a></li>
+          <li><a href="services.html#expert">Expert opinion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Call us to enroll or book a check-up:</p>
+        <a href="tel:+919088350914" class="footer-phone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> 90883 50914</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> EUREKA · Diabetic Care Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/health.js"></script>
+  <script src="js/records.js"></script>
+</body>
+</html>

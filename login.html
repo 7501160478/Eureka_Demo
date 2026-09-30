@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Login | Diabetic Care Club | EUREKA</title>
+  <meta name="description" content="Log in to the Diabetic Care Club patient portal with your Patient ID and registered mobile number.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <svg class="header-swoosh" viewBox="0 0 560 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M40 0 C170 58 380 86 560 64 L560 0 Z" fill="#f1fbfa" />
+      <path d="M210 0 C300 38 440 52 560 40 L560 0 Z" fill="#dff5f3" />
+      <path d="M370 0 C430 22 500 28 560 20 L560 0 Z" fill="#b4ebe7" />
+      <path d="M470 0 C500 9 530 11 560 7 L560 0 Z" fill="#25b8b1" />
+    </svg>
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="EUREKA — home">
+        <svg class="brand-mark" viewBox="0 0 48 40" aria-hidden="true">
+          <path d="M4 14 C14 6 30 4 44 6" stroke="#25b8b1" />
+          <path d="M4 24 C16 14 32 12 44 14" stroke="#159c96" />
+          <path d="M4 34 C18 24 34 22 44 24" stroke="#0b5351" />
+        </svg>
+        <span class="brand-text">
+          <strong>EUREKA</strong>
+          <em>redefine your ideas</em>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="records.html">Patient Records</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm btn-login active" id="loginBtn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="login-text">Patient Login</span>
+        </a>
+        <a href="tel:+919088350914" class="btn btn-primary btn-sm btn-call">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span class="btn-call-text">90883 50914</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-stripe" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <svg class="hero-swoosh" viewBox="0 0 640 320" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M150 0 C300 100 480 130 640 86 L640 0 Z" fill="#dff5f3" />
+      <path d="M300 0 C410 62 530 74 640 38 L640 0 Z" fill="#6fd9d3" opacity=".7" />
+      <path d="M440 0 C500 30 580 34 640 14 L640 0 Z" fill="#159c96" />
+    </svg>
+      <div class="container">
+        <div class="login-wrap">
+          <div class="login-aside">
+            <svg class="club-logo on-dark" viewBox="0 0 300 140" aria-hidden="true">
+          <path class="c-arc" d="M84 30 A52 52 0 1 0 84 120" />
+          <text class="t1" x="98" y="60" font-size="46">Diabetic</text>
+          <text class="t2" x="76" y="112" font-size="42">are club</text>
+        </svg>
+            <h2>Your diabetes record, whenever you need it</h2>
+            <p>Log in to see your latest readings, your blood sugar trend and your full check-up history.</p>
+            <ul class="checklist">
+              <li>Latest sugar, HbA1c and BP values</li>
+              <li>Blood sugar trend chart</li>
+              <li>Complete reading history</li>
+            </ul>
+            <svg class="login-aside-waves" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true">
+              <rect x="0" y="70" width="600" height="90" fill="#6fd9d3" opacity=".2" />
+              <rect x="0" y="104" width="600" height="56" fill="#25b8b1" opacity=".4" />
+              <rect x="0" y="134" width="600" height="26" fill="#083f3d" opacity=".6" />
+            </svg>
+          </div>
+
+          <form class="login-form" id="loginForm">
+            <div class="icon-ring sm"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span></div>
+            <h1>Patient Login</h1>
+            <p class="login-lead">Welcome back! Enter your details to view your health record.</p>
+
+            <div class="login-error" id="loginError" role="alert" hidden></div>
+
+            <div class="field"><label for="lId">Patient ID</label><input id="lId" name="patientId" type="text" required placeholder="e.g. DCC-0001" autocomplete="username" autocapitalize="characters" spellcheck="false"></div>
+            <div class="field"><label for="lMobile">Registered mobile number</label><input id="lMobile" name="mobile" type="tel" inputmode="numeric" required minlength="10" maxlength="16" placeholder="10-digit mobile number" autocomplete="tel"></div>
+
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+
+            <div class="login-help">
+              <p>Your Patient ID is shown when you register, and is also given by the club. Forgot it? Call <a href="tel:+919088350914">9088350914</a>.</p>
+              <p>Patient records are stored in this browser, so please log in on the device where your record is kept.</p>
+            </div>
+            <p class="login-alt">New patient? <a href="register.html" class="link-arrow">Register here</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <svg class="footer-wave" viewBox="0 0 1440 16" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="ftA" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#6fd9d3" /><stop offset="1" stop-color="#b4ebe7" /></linearGradient>
+        <linearGradient id="ftT" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#25b8b1" /><stop offset="1" stop-color="#6fd9d3" /></linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1440" height="5" fill="url(#ftA)" />
+      <rect x="0" y="8" width="1440" height="8" fill="url(#ftT)" />
+    </svg>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-light" aria-label="EUREKA — home">
+          <svg class="brand-mark" viewBox="0 0 48 40" aria-hidden="true">
+          <path d="M4 14 C14 6 30 4 44 6" stroke="#6fd9d3" />
+          <path d="M4 24 C16 14 32 12 44 14" stroke="#25b8b1" />
+          <path d="M4 34 C18 24 34 22 44 24" stroke="#ffffff" />
+        </svg>
+          <span class="brand-text">
+            <strong>EUREKA</strong>
+            <em>redefine your ideas</em>
+          </span>
+        </a>
+        <p class="footer-about">Diabetic Care Club — get full Diabetes care throughout the year, with a complete record and continuous monitoring for every patient.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="records.html">Patient Records</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Patient Login</a></li>
+          <li><a href="register.html">Patient Registration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#facilities">All medical facilities</a></li>
+          <li><a href="services.html#monitoring">Digital Central Monitoring</a></li>
+          <li><a href="services.html#expert">Expert opinion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Call us to enroll or book a check-up:</p>
+        <a href="tel:+919088350914" class="footer-phone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> 90883 50914</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> EUREKA · Diabetic Care Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/health.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
