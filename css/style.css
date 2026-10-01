@@ -1184,6 +1184,7 @@ dialog::backdrop { background: rgba(8, 63, 61, .5); backdrop-filter: blur(3px); 
   color: var(--white);
 }
 .footer-phone:hover { color: var(--aqua-300); }
+.footer-partner { display: block; width: 170px; max-width: none; height: auto; margin: 18px 0 0 -19px; } /* -19px lines the logo text up with the phone number */
 .footer-phone svg { width: 20px; height: 20px; fill: none; stroke: var(--aqua-300); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .footer-bottom { padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, .14); font-size: .88rem; }
 .footer-bottom p { margin: 0; }
@@ -1241,6 +1242,7 @@ dialog::backdrop { background: rgba(8, 63, 61, .5); backdrop-filter: blur(3px); 
 }
 
 @media (max-width: 600px) {
+  .footer-partner { margin-left: -14px; }
   :root { --header-h: 68px; }
   .section { padding: 72px 0; }
   .btn-call { display: none; }
